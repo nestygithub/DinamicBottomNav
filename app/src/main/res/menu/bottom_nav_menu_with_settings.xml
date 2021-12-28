@@ -23,9 +23,9 @@
 <!--        android:id="@+id/navigation_contacts"-->
 <!--        android:icon="@drawable/ic_contacts"-->
 <!--        android:title="@string/title_contacts" />-->
-<!--        <item-->
-<!--            android:id="@+id/navigation_settings"-->
-<!--            android:icon="@drawable/ic_settings"-->
-<!--            android:title="@string/title_settings" />-->
+        <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/title_settings" />
 
 </menu>

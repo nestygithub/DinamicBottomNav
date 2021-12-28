@@ -41,18 +41,18 @@ class MainActivity : AppCompatActivity() {
             )
         }
         if (settings){
-            navView.menu.removeItem(R.id.navigation_contacts)
-            navView.menu.add(0,R.id.navigation_settings,0,"Settings").setIcon(R.drawable.ic_settings)
-            navView.invalidate()
-//            navView.menu.clear()
-//            navView.inflateMenu(R.menu.bottom_nav_menu_with_settings)
+//            navView.menu.removeItem(R.id.navigation_contacts)
+//            navView.menu.add(0,R.id.navigation_settings,0,"Settings").setIcon(R.drawable.ic_settings)
+//            navView.invalidate()
+            navView.menu.clear()
+            navView.inflateMenu(R.menu.bottom_nav_menu_with_settings)
         }
         else{
-            navView.menu.removeItem(R.id.navigation_settings)
-            navView.menu.add(0,R.id.navigation_contacts,0,"Contacts").setIcon(R.drawable.ic_contacts)
-            navView.invalidate()
-//            navView.menu.clear()
-//            navView.inflateMenu(R.menu.bottom_nav_menu_with_contacts)
+//            navView.menu.removeItem(R.id.navigation_settings)
+//            navView.menu.add(0,R.id.navigation_contacts,0,"Contacts").setIcon(R.drawable.ic_contacts)
+//            navView.invalidate()
+            navView.menu.clear()
+            navView.inflateMenu(R.menu.bottom_nav_menu_with_contacts)
         }
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
